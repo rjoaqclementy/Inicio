@@ -1,4 +1,39 @@
-.titulo {
-    color: red;
-    transform: scaleY(23px);
+.imagen-astronauta {
+    width: 200px;
+}
+
+.transition {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 0.5s, height 2s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 300px;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    from {
+        background-color: cyan;
+        transform: translateY(-100px);
+    }
+
+    to {
+        background-color: greenyellow;
+        transform: translateY(0);
+    }
 }
